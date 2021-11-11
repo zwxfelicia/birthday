@@ -119,22 +119,22 @@ $('document').ready(function(){
 		loopSix();
 		loopSeven();
 		
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
-			$('#cake_fadein').fadeIn('slow');
+		$(this).fadeOut('fast').delay(5000).promise().done(function(){
+			$('#cake_fadein').fadeIn('fast');
 		});
 	});	
 
 	$('#cake_fadein').click(function(){
-		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
-			$('#light_candle').fadeIn('slow');
+		$('.cake').fadeIn('fast');
+		$(this).fadeOut('fast').delay(3000).promise().done(function(){
+			$('#light_candle').fadeIn('fast');
 		});
 	});
 
 	$('#light_candle').click(function(){
-		$('.fuego').fadeIn('slow');
-		$(this).fadeOut('slow').promise().done(function(){
-			$('#wish_message').fadeIn('slow');
+		$('.fuego').fadeIn('fast');
+		$(this).fadeOut('fast').promise().done(function(){
+			$('#wish_message').fadeIn('fast');
 		});
 	});
 
@@ -173,7 +173,7 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(1800).promise().done(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
